@@ -1,0 +1,202 @@
+:root {
+    --greyColor: rgba(0, 0, 0, 0.5);
+    --borderRaduis: 25px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafc;
+    padding: 0px 15px;
+}
+
+.header {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_titles .header_title {
+    font-size: 30px;
+
+}
+
+.header_titles .header_subtitle {
+    font-size: 14px;
+    margin-top: 5px;
+    color: var(--greyColor);
+}
+
+.header_icon svg {
+    fill: var(--greyColor);
+    width: 20px;
+}
+
+.header_icon:first-child{
+    margin-right: 15px;
+}
+
+.main {
+    margin: 50px 0;
+    margin-bottom: 100px;
+}
+
+.recipe {
+    height: 50vh;
+    border-radius: var(--borderRaduis);
+    background-image: url(https://i.pinimg.com/564x/a6/06/16/a606166d0fb7a7db2db071f318793b2a.jpg);
+    background-size: 100%;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.recipe .recipe_heart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.recipe_heart svg {
+    width: 20px;
+    fill: #e74c3c;
+}
+
+.recipe .recipe_info {
+    background-color: white;
+    border-radius: var(--borderRaduis);
+    width: 90%;
+    padding: 10px 25px;
+    box-shadow: 0 7px 20px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+    top: 50px;
+}
+
+.recipe_meta {
+    margin-bottom: 20px;
+}
+
+.recipe_info .recipe_meta {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--greyColor);
+}
+
+.recipe_info .recipe_title{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.recipe_meta {
+    color: var(--greyColor);
+    font-weight: 600;
+}
+
+.recipe_info .recipe_social {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
+}
+
+.recipe_social .recipe_social-item {
+    display: flex;
+    align-items: center;
+}
+
+.recipe_social-item svg {
+    margin-left: 10px;
+    fill: var(--greyColor);
+}
+
+.recommended .recommended_header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.recommended_header .recommended_title {
+    font-size: 20px;
+}
+
+.recommended_header .recommended_small{
+    color: var(--greyColor);
+}
+
+.recommended_grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: minmax(120px, 1fr);
+    grid-auto-columns: minmax(120px, 1fr);
+    grid-gap: 25px;
+    overflow: scroll;
+}
+
+.recommended-recipe {
+    border-radius: var(--borderRaduis);
+    height: 19vh;
+    background-image: url(https://i.pinimg.com/564x/b5/7e/b7/b57eb7dab67c056ce8a8c85f23383cdd.jpg);
+    background-size: 100%;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.recommended-recipe:last-child {
+    background-image: url(https://i.pinimg.com/564x/34/38/31/34383150686cb99cb52f4e11bf8f0bdf.jpg);
+}
+
+.recommended-recipe:nth-child(2) {
+    background-image: url(https://i.pinimg.com/564x/1b/ae/b8/1baeb8e352267b01569374c239bd910f.jpg);
+}
+
+.recommended-recipe:nth-child(3) {
+    background-image: url(https://i.pinimg.com/564x/5c/fb/9a/5cfb9a58121b20dda11f292b40c11816.jpg);
+}
+
+.recommended-recipe:nth-child(4) {
+    background-image: url(https://i.pinimg.com/564x/fe/00/9a/fe009af03c4a0790ebf4c2d82622ac81.jpg);
+}
+
+.recommended-recipe .recommended-recipe_info {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.recommended-recipe_info .recommended-recipe_title {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.recommended-recipe_info .recommended-recipe_subtitle {
+    font-size: 8px;
+    color: var(--greyColor);
+}
